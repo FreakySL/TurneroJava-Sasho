@@ -4,6 +4,9 @@
  */
 package com.mycompany.appsasho.clasesJavaAppSasho;
 
+import java.time.LocalDate;
+import java.util.List;
+
 /**
  *
  * @author santi
@@ -13,5 +16,66 @@ public class Curso {
     private String nombre;
     private int cantModulos;
     private int cantJornadas;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
+    private List<Horario> horarios;
+
+    public Curso(String nombre, int cantModulos, int cantJornadas, LocalDate fechaInicio, LocalDate fechaFin, List<Horario> horarios) {
+        this.nombre = nombre;
+        this.cantModulos = cantModulos;
+        this.cantJornadas = cantJornadas;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.horarios = horarios;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getCantModulos() {
+        return cantModulos;
+    }
+
+    public int getCantJornadas() {
+        return cantJornadas;
+    }
+
+    public LocalDate getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public LocalDate getFechaFin() {
+        return fechaFin;
+    }
+
+    public List<Horario> getHorarios() {
+        return horarios;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCantModulos(int cantModulos) {
+        this.cantModulos = cantModulos;
+    }
+
+    public void setCantJornadas(int cantJornadas) {
+        this.cantJornadas = cantJornadas;
+    }
+
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public void setFechaFin(LocalDate fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public void setHorarios(List<Horario> horarios) {
+        this.horarios = horarios;
+    }
+    
     
 }

@@ -12,10 +12,12 @@ public class Turno {
     
     private int tipoServicio;
     private float costo;
+    Horario horario;
 
-    public Turno(int tipoServicio, float costo) {
+    public Turno(int tipoServicio, float costo, Horario horario) {
         this.tipoServicio = tipoServicio;
         this.costo = costo;
+        this.horario = horario;
     }
 
     public int getTipoServicio() {
@@ -26,6 +28,10 @@ public class Turno {
         return costo;
     }
 
+    public Horario getHorario() {
+        return horario;
+    }
+
     public void setTipoServicio(int tipoServicio) {
         this.tipoServicio = tipoServicio;
     }
@@ -33,7 +39,11 @@ public class Turno {
     public void setCosto(float costo) {
         this.costo = costo;
     }
-    
+
+    public void setHorario(Horario horario) {
+        this.horario = horario;
+    }
+   
     
     
 }
