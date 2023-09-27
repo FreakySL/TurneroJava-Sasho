@@ -4,7 +4,8 @@
  */
 package com.mycompany.appsasho.clasesJavaAppSasho;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 /**
  *
@@ -12,28 +13,38 @@ import java.time.LocalDateTime;
  */
 public class Horario {
     
-    private LocalDateTime fechaHoraInicio;
-    private LocalDateTime fechaHoraFin;
+    private LocalDate fecha;
+    private LocalTime horaInicio;
+    private LocalTime horaFin;
 
-    public Horario(LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFin) {
-        this.fechaHoraInicio = fechaHoraInicio;
-        this.fechaHoraFin = fechaHoraFin;
+    public Horario(LocalDate fecha, LocalTime horaInicio, LocalTime horaFin) {
+        this.fecha = fecha;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
     }
 
-    public LocalDateTime getFechaHoraInicio() {
-        return fechaHoraInicio;
+    public LocalDate getFecha() {
+        return fecha;
     }
 
-    public LocalDateTime getFechaHoraFin() {
-        return fechaHoraFin;
+    public LocalTime getHoraInicio() {
+        return horaInicio;
     }
 
-    public void setFechaHoraInicio(LocalDateTime fechaHoraInicio) {
-        this.fechaHoraInicio = fechaHoraInicio;
+    public LocalTime getHoraFin() {
+        return horaFin;
     }
 
-    public void setFechaHoraFin(LocalDateTime fechaHoraFin) {
-        this.fechaHoraFin = fechaHoraFin;
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
+
+    public void setHoraInicio(LocalTime horaInicio) {
+        this.horaInicio = horaInicio;
+    }
+
+    public void setHoraFin(LocalTime horaFin) {
+        this.horaFin = horaFin;
+    } 
     
 }
