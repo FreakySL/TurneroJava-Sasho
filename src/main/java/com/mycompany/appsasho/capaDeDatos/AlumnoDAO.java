@@ -15,7 +15,7 @@ public interface AlumnoDAO {
     
     public void create(Alumno a);
     public List<Alumno> read();
-    public void delete(int codPersona);
+    public void delete(int codAlumno);
     public void update(Alumno a);
     
 }

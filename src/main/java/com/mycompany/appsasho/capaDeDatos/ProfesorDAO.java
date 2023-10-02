@@ -15,7 +15,7 @@ public interface ProfesorDAO {
     
     public void create(Profesor a);
     public List<Profesor> read();
-    public void delete(int codPersona);
+    public void delete(int codProfesor);
     public void update(Profesor a);
     
 }

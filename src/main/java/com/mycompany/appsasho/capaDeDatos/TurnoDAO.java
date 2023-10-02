@@ -15,7 +15,7 @@ public interface TurnoDAO {
     
     public void create(Turno a);
     public List<Turno> read();
-    public void delete(int codPersona);
+    public void delete(int codTurno);
     public void update(Turno a);
     
 }

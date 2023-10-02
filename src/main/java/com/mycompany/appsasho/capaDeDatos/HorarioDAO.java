@@ -15,7 +15,7 @@ public interface HorarioDAO {
     
     public void create(Horario a);
     public List<Horario> read();
-    public void delete(int codPersona);
+    public void delete(int codHorario);
     public void update(Horario a);
     
 }

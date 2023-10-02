@@ -15,7 +15,7 @@ public interface ClienteDAO {
     
     public void create(Cliente a);
     public List<Cliente> read();
-    public void delete(int codPersona);
+    public void delete(int codCliente);
     public void update(Cliente a);
     
 }

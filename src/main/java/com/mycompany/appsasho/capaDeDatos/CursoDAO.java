@@ -15,7 +15,7 @@ public interface CursoDAO {
     
     public void create(Curso a);
     public List<Curso> read();
-    public void delete(int codPersona);
+    public void delete(int codCurso);
     public void update(Curso a);
     
 }
