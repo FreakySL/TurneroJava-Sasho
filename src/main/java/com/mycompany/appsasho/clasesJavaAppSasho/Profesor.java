@@ -11,9 +11,10 @@ package com.mycompany.appsasho.clasesJavaAppSasho;
 public class Profesor extends Persona {
     
     private String profesion;
-    
-    public Profesor(String nombre, String apellido, int edad, String domicilio, int telefono) {
-        super(nombre, apellido, edad, domicilio, telefono);
+
+    public Profesor(String profesion, int codPersona, String nombre, String apellido, int edad, String domicilio, int telefono) {
+        super(codPersona, nombre, apellido, edad, domicilio, telefono);
+        this.profesion = profesion;
     }
 
     public String getProfesion() {

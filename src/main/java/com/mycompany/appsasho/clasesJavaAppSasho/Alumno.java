@@ -11,9 +11,10 @@ package com.mycompany.appsasho.clasesJavaAppSasho;
 public class Alumno extends Persona{
     
     private String email;
-    
-    public Alumno(String nombre, String apellido, int edad, String domicilio, int telefono) {
-        super(nombre, apellido, edad, domicilio, telefono);
+
+    public Alumno(String email, int codPersona, String nombre, String apellido, int edad, String domicilio, int telefono) {
+        super(codPersona, nombre, apellido, edad, domicilio, telefono);
+        this.email = email;
     }
 
     public String getEmail() {

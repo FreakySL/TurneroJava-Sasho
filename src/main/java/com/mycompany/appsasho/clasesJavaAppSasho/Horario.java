@@ -13,16 +13,22 @@ import java.time.LocalTime;
  */
 public class Horario {
     
+    private int codHorario;
     private LocalDate fecha;
     private LocalTime horaInicio;
     private LocalTime horaFin;
 
-    public Horario(LocalDate fecha, LocalTime horaInicio, LocalTime horaFin) {
+    public Horario(int codHorario, LocalDate fecha, LocalTime horaInicio, LocalTime horaFin) {
+        this.codHorario = codHorario;
         this.fecha = fecha;
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;
     }
 
+    public int getCodHorario() {
+        return codHorario;
+    }
+    
     public LocalDate getFecha() {
         return fecha;
     }
@@ -33,6 +39,10 @@ public class Horario {
 
     public LocalTime getHoraFin() {
         return horaFin;
+    }
+
+    public void setCodHorario(int codHorario) {
+        this.codHorario = codHorario;
     }
 
     public void setFecha(LocalDate fecha) {

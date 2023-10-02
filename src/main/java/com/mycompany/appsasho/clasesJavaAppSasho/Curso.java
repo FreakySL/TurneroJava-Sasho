@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class Curso {
     
+    private int codCurso;
     private String nombre;
     private int cantModulos;
     private int cantJornadas;
@@ -20,13 +21,18 @@ public class Curso {
     private LocalDate fechaFin;
     private List<Horario> horarios;
 
-    public Curso(String nombre, int cantModulos, int cantJornadas, LocalDate fechaInicio, LocalDate fechaFin, List<Horario> horarios) {
+    public Curso(int codCurso, String nombre, int cantModulos, int cantJornadas, LocalDate fechaInicio, LocalDate fechaFin, List<Horario> horarios) {
+        this.codCurso = codCurso;
         this.nombre = nombre;
         this.cantModulos = cantModulos;
         this.cantJornadas = cantJornadas;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.horarios = horarios;
+    }
+
+    public int getCodCurso() {
+        return codCurso;
     }
 
     public String getNombre() {
@@ -51,6 +57,10 @@ public class Curso {
 
     public List<Horario> getHorarios() {
         return horarios;
+    }
+
+    public void setCodCurso(int codCurso) {
+        this.codCurso = codCurso;
     }
 
     public void setNombre(String nombre) {

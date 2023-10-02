@@ -10,14 +10,20 @@ package com.mycompany.appsasho.clasesJavaAppSasho;
  */
 public class Turno {
     
+    private int codTurno;
     private int tipoServicio;
     private float costo;
     Horario horario;
 
-    public Turno(int tipoServicio, float costo, Horario horario) {
+    public Turno(int codTurno, int tipoServicio, float costo, Horario horario) {
+        this.codTurno = codTurno;
         this.tipoServicio = tipoServicio;
         this.costo = costo;
         this.horario = horario;
+    }
+
+    public int getCodTurno() {
+        return codTurno;
     }
 
     public int getTipoServicio() {
@@ -32,6 +38,10 @@ public class Turno {
         return horario;
     }
 
+    public void setCodTurno(int codTurno) {
+        this.codTurno = codTurno;
+    }
+    
     public void setTipoServicio(int tipoServicio) {
         this.tipoServicio = tipoServicio;
     }

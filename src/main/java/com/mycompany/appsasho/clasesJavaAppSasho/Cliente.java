@@ -9,9 +9,9 @@ package com.mycompany.appsasho.clasesJavaAppSasho;
  * @author santi
  */
 public class Cliente extends Persona{
-    
-    public Cliente(String nombre, String apellido, int edad, String domicilio, int telefono) {
-        super(nombre, apellido, edad, domicilio, telefono);
+
+    public Cliente(int codPersona, String nombre, String apellido, int edad, String domicilio, int telefono) {
+        super(codPersona, nombre, apellido, edad, domicilio, telefono);
     }
     
 }

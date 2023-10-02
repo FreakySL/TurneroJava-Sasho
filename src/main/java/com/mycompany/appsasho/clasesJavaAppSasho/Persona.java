@@ -10,18 +10,24 @@ package com.mycompany.appsasho.clasesJavaAppSasho;
  */
 public class Persona {
     
+    private int codPersona;
     private String nombre;
     private String apellido;
     private int edad;
     private String domicilio;
     private int telefono;
 
-    public Persona(String nombre, String apellido, int edad, String domicilio, int telefono) {
+    public Persona(int codPersona, String nombre, String apellido, int edad, String domicilio, int telefono) {
+        this.codPersona = codPersona;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.domicilio = domicilio;
         this.telefono = telefono;
+    }
+
+    public int getCodPersona() {
+        return codPersona;
     }
 
     public String getNombre() {
@@ -44,6 +50,10 @@ public class Persona {
         return telefono;
     }
 
+    public void setCodPersona(int codPersona) {
+        this.codPersona = codPersona;
+    }
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
